@@ -11,4 +11,20 @@
 -keep class com.swmansion.reanimated.** { *; }
 -keep class com.facebook.react.turbomodule.** { *; }
 
-# Add any project specific keep options here:
+# Expo Modules
+-keep class expo.modules.** { *; }
+-keep class com.facebook.react.bridge.Systrace { *; }
+-keep class com.facebook.react.devsupport.** { *; }
+
+# Expo Task Manager & Background Task
+-keep class expo.modules.taskmanager.** { *; }
+-keep class expo.modules.backgroundtask.** { *; }
+
+# AsyncStorage
+-keep class com.reactnativecommunity.asyncstorage.** { *; }
+
+# React Native Vector Icons
+-keep class com.oblador.vectoricons.** { *; }
+
+# Notifications
+-keep class expo.modules.notifications.** { *; }
